@@ -89,10 +89,10 @@ const Footer = () => {
         <div style={{ flex: "1 1 300px", marginBottom: "20px" }}>
           <h3>FOLLOW US</h3>
           <div style={{ display: "flex", gap: "10px", margin:"20px 0"}}>
-            <a href="#" style={{ color: "#fff", fontSize: "20px" }}>
+            <a href="/self" style={{ color: "#fff", fontSize: "20px" }}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" height="40px" />
             </a>
-            <a href="#" style={{ color: "#fff", fontSize: "20px" }}>
+            <a href="/self" style={{ color: "#fff", fontSize: "20px" }}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png
 
 " alt="linkedin" height="40px" />

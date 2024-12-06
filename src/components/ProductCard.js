@@ -101,10 +101,10 @@ const ProductCard = ({ product }) => {
           fontWeight: "bold",
           color: "#333",
           margin: "5px 0",
-        }}
+        }} className="productpara"
       >
         <pre>
-          <a href="" target="_self">
+          <a href="#productpara" target="_self">
             Sign in
           </a> or Create an account to see pricing{"      "}
           <span style={{ cursor: "pointer", color:"red"}}>♥️</span> {/* Icon */}
