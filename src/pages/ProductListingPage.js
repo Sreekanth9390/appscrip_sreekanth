@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import  MainComponents from "../components/MainComponents";
+import MainComponents from "../components/MainComponents";
 import Section from "../components/Section";
 
 const ProductListingPage = () => {
-  const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
-  const [filter, setFilter] = useState("");
+  const [products, setProducts] = useState([]); // Holds all products
+  const [filteredProducts, setFilteredProducts] = useState([]); // Holds filtered products
 
   // Fetch products from API
   useEffect(() => {
@@ -25,7 +24,7 @@ const ProductListingPage = () => {
 
     switch (filterType) {
       case "recommended":
-        updatedProducts = products;  // No change for "Recommended" filter (for now)
+        updatedProducts = products; // No change for "Recommended" filter (for now)
         break;
       case "newest":
         updatedProducts = [...products].sort((a, b) => b.id - a.id); // Sort by newest (ID-based)
@@ -37,17 +36,17 @@ const ProductListingPage = () => {
         updatedProducts = [...products].sort((a, b) => a.price - b.price); // Sort by price low to high
         break;
       default:
-        updatedProducts = products;  // No filter applied
+        updatedProducts = products; // No filter applied
     }
 
-    setFilteredProducts(updatedProducts);  // Update the displayed product list
+    setFilteredProducts(updatedProducts); // Update the displayed product list
   };
 
   return (
     <div>
       <Header />
       <Section />
-      <MainComponents />
+      <MainComponents products={filteredProducts} applyFilter={applyFilter} />
       <Footer />
     </div>
   );

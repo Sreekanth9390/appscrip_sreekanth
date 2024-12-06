@@ -104,7 +104,7 @@ const ProductCard = ({ product }) => {
         }} className="productpara"
       >
         <pre>
-          <a href="#productpara" target="_self">
+          <a href="https://www.instagram.com" target="_self">
             Sign in
           </a> or Create an account to see pricing{"      "}
           <span style={{ cursor: "pointer", color:"red"}}>♥️</span> {/* Icon */}
