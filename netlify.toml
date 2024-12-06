@@ -1,5 +1,6 @@
 [build]
-command = "npm install && npm run build"
-publish = "build"
+  command = "NODE_OPTIONS=--openssl-legacy-provider npm install && npm run build"
+  publish = "build"
+
 [build.environment]
-NODE_VERSION = "20.0.0"
+  NODE_VERSION = "18.16.0"
