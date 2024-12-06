@@ -1,0 +1,49 @@
+.sidebar {
+  width: 90%;
+  min-width: "500px";
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.customizable-option {
+  margin-bottom: 20px;
+  font-size: 1.5vw;
+}
+
+.sidebar-section {
+  margin-bottom: 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-content {
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 1.5vw;
+}
+
+.section-content p {
+  margin: 5px 0;
+  font-size: 1.2vw;
+  cursor: pointer;
+  color: #007bff; /* For links like "Unselect all" */
+}
+
+.section-content p.clear-selection:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  
+}
