@@ -105,7 +105,7 @@ const ProductCard = ({ product }) => {
         className="productpara"
       >
         <pre>
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to="/">
             Sign in
           </Link>{" "}
           or Create an account to see pricing{"      "}
