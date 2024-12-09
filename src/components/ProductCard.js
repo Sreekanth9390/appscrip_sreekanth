@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
   return (
     <div
       style={{
-        
         border: "1px solid #ccc",
         padding: "10px",
         display: "flex",
@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
         backgroundColor: "#fff",
         transition: "all 0.3s ease",
         height: "auto",
-        width:"23vw",
+        width: "23vw",
         position: "relative", // Enables positioning of child elements
       }}
     >
@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
             maxHeight: "14vw",
           }}
         />
-        
+
         {/* New Product Overlay (for first product) */}
         {product.id === 1 && (
           <div
@@ -101,13 +101,16 @@ const ProductCard = ({ product }) => {
           fontWeight: "bold",
           color: "#333",
           margin: "5px 0",
-        }} className="productpara"
+        }}
+        className="productpara"
       >
         <pre>
-          <a href="https://www.instagram.com" target="_self">
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             Sign in
-          </a> or Create an account to see pricing{"      "}
-          <span style={{ cursor: "pointer", color:"red"}}>♥️</span> {/* Icon */}
+          </Link>{" "}
+          or Create an account to see pricing{"      "}
+          <span style={{ cursor: "pointer", color: "red" }}>♥️</span>{" "}
+          {/* Icon */}
         </pre>
       </p>
     </div>
